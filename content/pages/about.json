@@ -3,14 +3,14 @@
   "path": "/about",
   "blocks": [
     {
-      "_template": "TitleBlock",
-      "title": "This is a title",
-      "underline": true,
+      "_template": "ImageBlock",
+      "image": "../images/dragonSelfie",
       "content": ""
     },
     {
-      "_template": "ImageBlock",
-      "image": "../images/dragonSelfie",
+      "_template": "TitleBlock",
+      "title": "This is a title",
+      "underline": true,
       "content": ""
     },
     {
