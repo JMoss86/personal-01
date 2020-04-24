@@ -1,15 +1,10 @@
 {
   "title": "About",
-  "path": "/about",
+  "path": "/resume",
   "blocks": [
     {
-      "_template": "ImageBlock",
-      "image": "../images/dragonSelfie",
-      "content": ""
-    },
-    {
       "_template": "TitleBlock",
-      "title": "This is a title",
+      "title": "A fantastic resume",
       "underline": true,
       "content": ""
     },
