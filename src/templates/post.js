@@ -32,22 +32,13 @@ function Post(props) {
         name: "rawFrontmatter.title",
         component: "text",
       },
-      {
-        label: "Authors",
-        name: "rawFrontmatter.authors",
-        component: "authors",
-        authors: authors,
-      },
+
       {
         name: "rawFrontmatter.draft",
         component: "toggle",
         label: "Draft",
       },
-      {
-        label: "Date",
-        name: "rawFrontmatter.date",
-        component: "date",
-      },
+
       {
         label: "Hero Image",
         name: "rawFrontmatter.hero.image",
@@ -81,7 +72,7 @@ function Post(props) {
               </MetaSpan>
             )}
             <MetaActions>
-              <Link to="/blog">← Back to Blog</Link>
+              <Link to="/portfolio">← Back to my portfolio</Link>
             </MetaActions>
           </Meta>
           <h1>

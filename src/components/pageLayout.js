@@ -34,7 +34,6 @@ export const PageLayout = ({ page, children }) => {
       site: settingsJson(
         fileRelativePath: { eq: "/content/settings/site.json" }
       ) {
-        logo
         title
         description
         author

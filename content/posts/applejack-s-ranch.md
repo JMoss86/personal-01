@@ -1,11 +1,9 @@
 ---
 title: Applejack's Ranch
-date: 2020-04-24T00:00:00.000Z
 type: post
 path: /portfolio/applejack-s-ranch
 draft: false
-authors:
-  - jonathan-moss
 ---
+A starter site I built for my girlfriend's parents.  They're goal is to open this ranch in California sometime in the future.  The site was built to generate excitement and inspiration in their team.
 
-A starter site I built for my girlfriend's mother.
+[https://applejack.netlify.app](https://applejack.netlify.app "Applejack's Ranch")

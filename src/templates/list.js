@@ -8,7 +8,6 @@ import {
   MetaActions,
   DraftBadge,
 } from "../components/style"
-import { ListAuthors, AuthorsForm } from "../components/authors"
 import { Link } from "gatsby"
 import { PageLayout } from "../components/pageLayout"
 
@@ -16,7 +15,6 @@ import { useLocalJsonForm } from "gatsby-tinacms-json"
 
 export default function List({ data, pageContext }) {
   const [page] = useLocalJsonForm(data.page, ListForm)
-  const [authors] = useLocalJsonForm(data.authors, AuthorsForm)
 
   const { slug, limit, skip, numPages, currentPage } = pageContext
   const isFirst = currentPage === 1
@@ -30,7 +28,7 @@ export default function List({ data, pageContext }) {
     <PageLayout page={page}>
       <>
         {data.posts &&
-          data.posts.edges.map(item => {
+          data.posts.edges.map((item) => {
             return (
               <Paper article key={item.node.id}>
                 {item.node.frontmatter.draft && <DraftBadge>Draft</DraftBadge>}
@@ -41,15 +39,8 @@ export default function List({ data, pageContext }) {
                 </h2>
                 <p>{item.node.excerpt}</p>
                 <Meta>
-                  <MetaSpan>{item.node.frontmatter.date}</MetaSpan>
-                  {item.node.frontmatter.authors && (
-                    <MetaSpan>
-                      <em>By</em>&nbsp;
-                      <ListAuthors authorIDs={item.node.frontmatter.authors} />
-                    </MetaSpan>
-                  )}
                   <MetaActions>
-                    <Link to={item.node.frontmatter.path}>Read Article →</Link>
+                    <Link to={item.node.frontmatter.path}>See more</Link>
                   </MetaActions>
                 </Meta>
               </Paper>
@@ -172,9 +163,9 @@ const ListForm = {
           label: "Image",
           name: "image",
           component: "image",
-          parse: filename => `../images/${filename}`,
+          parse: (filename) => `../images/${filename}`,
           uploadDir: () => `/content/images/`,
-          previewSrc: formValues => {
+          previewSrc: (formValues) => {
             if (!formValues.jsonNode.hero || !formValues.jsonNode.hero.image)
               return ""
             return formValues.jsonNode.hero.image.childImageSharp.fluid.src
@@ -184,7 +175,7 @@ const ListForm = {
           label: "Actions",
           name: "ctas",
           component: "group-list",
-          itemProps: item => ({
+          itemProps: (item) => ({
             key: item.link,
             label: item.label,
           }),

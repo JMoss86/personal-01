@@ -1,10 +1,10 @@
 {
-  "path": "/blog",
-  "title": "Blog",
+  "path": "/portfolio",
+  "title": "Portfolio",
   "pageType": "list",
   "listType": "post",
   "hero": {
-    "image": "../images/undefined",
+    "image": "../images/bg-masthead.jpg",
     "large": true,
     "overlay": true
   }

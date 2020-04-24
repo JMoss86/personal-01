@@ -58,7 +58,7 @@ export const Theme = ({ children }) => {
       link: bestContrast(
         darkMode ? globalTheme.color.black : globalTheme.color.white,
         globalTheme.color.primary,
-        globalTheme.color.secondary
+        globalTheme.color.primary
       ),
     },
     easing: globalTheme.easing,
@@ -95,9 +95,9 @@ export const Theme = ({ children }) => {
 
 const TinaOverrideGlobalStyle = createGlobalStyle`
   :root {
-    --tina-color-primary-light: ${props => props.primary};
-    --tina-color-primary: ${props => props.primary};
-    --tina-color-primary-dark: ${props => props.primary};
+    --tina-color-primary-light: ${(props) => props.primary};
+    --tina-color-primary: ${(props) => props.primary};
+    --tina-color-primary-dark: ${(props) => props.primary};
   }
 `
 

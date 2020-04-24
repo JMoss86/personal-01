@@ -3,8 +3,13 @@
   "blocks": [
     {
       "_template": "ContentBlock",
-      "content": "## Are you looking for a junior developer?\n\nAs it happens, I am a junior developer, and I'd like to work for you!  My name is Jonathan Moss, and I would like to work for you.  Have a look around at what I can do with my free time.  If you like what you see, imagine what I can do when I'm on the clock!\n\n## ",
+      "content": "## Are you looking for a junior developer?\n\nWhat luck! **I** am a junior developer.  My name is Jonathan Moss, and I would like to work for you.  Have a look around at what I've put together here.  Be sure to check out my resume and portfolio, and if you like what you see, get in touch.  Let's see what we can build together.\n\n## ",
       "center": false
+    },
+    {
+      "image": "../images/dragonSelfie.jpg",
+      "_template": "ImageBlock",
+      "content": ""
     }
   ],
   "hero": {
@@ -12,19 +17,19 @@
     "textline": "Junior Software and Web Developer",
     "ctas": [
       {
-        "label": "Read The Blog",
+        "label": "Portfolio",
         "link": "/blog",
         "primary": true,
-        "arrow": true
+        "arrow": false
       },
       {
-        "label": "Contact Us",
+        "label": "Contact",
         "link": "/contact",
         "arrow": false,
         "primary": false
       }
     ],
-    "image": "../images/undefined",
+    "image": "../images/bg-masthead.jpg",
     "large": true
   },
   "displayTitle": false,

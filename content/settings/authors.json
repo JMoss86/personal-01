@@ -1,6 +1,11 @@
 {
   "authors": [
     {
+      "name": "Jonathan Moss",
+      "id": "jonathan-moss",
+      "email": "jdmoss86@gmail.com"
+    },
+    {
       "name": "Katie Graham",
       "id": "katie-graham",
       "email": "test@test.com"
@@ -11,5 +16,8 @@
       "email": "scott.byrne@forestry.io",
       "link": "mailto:scott.byrne@forestry.io"
     }
-  ]
+  ],
+  "__gatsby_resolved": {
+    "fileRelativePath": "/content/settings/authors.json"
+  }
 }
