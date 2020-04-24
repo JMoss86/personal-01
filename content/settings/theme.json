@@ -2,8 +2,8 @@
   "color": {
     "black": "#131110",
     "white": "#f7f7f7",
-    "primary": "#007043",
-    "secondary": "#B8A45D"
+    "primary": "#1E7653",
+    "secondary": "#A739BA"
   },
   "easing": "cubic-bezier(0.215, 0.610, 0.355, 1.000)",
   "breakpoints": {
@@ -22,7 +22,7 @@
     "underline": true
   },
   "hero": {
-    "image": "../images/cafe.jpg",
+    "image": "../images/bg-masthead.jpg",
     "large": false,
     "overlay": true,
     "overlap": "8rem",
@@ -33,5 +33,8 @@
   },
   "menu": {
     "style": "glow"
+  },
+  "__gatsby_resolved": {
+    "fileRelativePath": "/content/settings/theme.json"
   }
 }
